@@ -1,6 +1,6 @@
 # Charaka (ಚರಕ)
 
-Minimalistic and Responsive blog theme for hugo. Uses css framework [Bluma](https://bulma.io/).
+Minimalistic and Responsive blog theme for hugo. Uses css framework [Bulma](https://bulma.io/).
  
 ![](https://github.com/natarajmb/charaka-hugo-theme/blob/master/images/screenshot.png)
 
@@ -73,7 +73,7 @@ You can go to localhost:1313 and this theme should be visible.
 - Once you have activited the theme as above and running hugo in server mode
 - Install [npm](https://www.npmjs.com/get-npm)
 - Get inside checked-out theme directory and run `npm install`
-- Make required changes to style.scss and run `npm css-watch` to live update your changes
+- Make required changes to style.scss and run `npm run css-build && npm run css-watch` to live update your changes
 
 ## License
 
