@@ -1,0 +1,44 @@
+<section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          {{ if .Paginator.HasPrev }}
+          <a class="button is-rounded" href="{{ .Paginator.Prev.URL }}">
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          {{ else }}
+          <a class="button is-rounded" disabled>
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          {{ if .Paginator.HasNext }}
+          <a class="button is-rounded" href="{{ .Paginator.Next.URL }}">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          {{ else }}
+          <a class="button is-rounded" disabled>
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+<section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <span class="">
+        <i class="far fa-frown fa-10x"></i>
+      </span>
+      <h1 class="title is-2 notfound">404</h1>
+      <h2 class="subtitle is-4">
+        Page not found
+      </h2>
+      <p>The page you are looking for doesn't exist or an other error occured.</p>
+      <p><a href="#" onclick="history.go(-1)">Go back</a>, or head over to <a href="{{ .Site.BaseURL }}">Home page</a></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{
+  "name": "charaka",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "node-sass": "^4.9.3"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url --output-style compressed scss/styles.scss static/css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  }
+}

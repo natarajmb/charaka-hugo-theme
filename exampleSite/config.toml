@@ -1,0 +1,35 @@
+baseurl = "https://example.com"
+languageCode = "en"
+title = "Charaka"
+theme = "charaka"
+copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
+disqusShortname = ""
+googleAnalytics = ""
+
+[params]
+
+[author]
+  name = "Nataraj Basappa"
+  homepage = "https://natarajmb.com"
+
+[params.highlight]
+  style = "zenburn"
+
+[params.share]
+  enabled = "true"
+
+[[params.social]]
+  url = "http://localhost:1313"
+  fa_icon = "fas fa-info"
+
+[[params.social]]
+  url = "https://github.com/natarajmb"
+  fa_icon = "fab fa-github"
+
+[[params.social]]
+  url = "https://www.linkedin.com/in/natarajmb/"
+  fa_icon = "fab fa-linkedin-in"
+
+[[params.social]]
+  url = "https://twitter.com/natarajmb"
+  fa_icon = "fab fa-twitter"

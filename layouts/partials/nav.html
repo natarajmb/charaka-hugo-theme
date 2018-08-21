@@ -1,0 +1,18 @@
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="{{ .Site.BaseURL }}"><h1 class="title is-3">{{ .Site.Title }}</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              {{ range .Site.Params.social }}
+                <a href="{{ .url }}">
+                  <span class="icon">
+                    <i class="{{ .fa_icon }}"></i>
+                  </span>
+                </a>
+              {{ end }}
+           </div>
+      </div>
+    </nav>
+  </div>

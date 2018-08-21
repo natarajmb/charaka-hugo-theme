@@ -1,0 +1,14 @@
+name = "Charaka"
+license = "MIT"
+licenselink = "https://github.com/natarajmb/charaka-hugo-theme/blob/master/LICENSE.md"
+description = "Minimalistic and Responsive blog theme for hugo"
+homepage = "https://github.com/natarajmb/charaka-hugo-theme"
+tags = ["blog", "font awesome", "highlight.js", "bluma"]
+features = ["html5", "css3"]
+min_version = 0.46
+
+[params]
+
+[author]
+  name = "Nataraj Basappa"
+  homepage = "https://www.natarajmb.com"

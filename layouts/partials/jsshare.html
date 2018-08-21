@@ -1,0 +1,12 @@
+<div class="container has-text-centered">
+    {{ if .Site.Params.share.enabled }}
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+        });
+    </script>
+    {{ end }}
+</div>

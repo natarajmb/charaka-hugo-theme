@@ -1,0 +1,32 @@
+<div class="container">
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<main class="container">
+    {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
+    <h1 class="title is-3">{{ .Key }}</h1>
+    {{ range .Pages }}
+    <article class="columns">
+      <div class="column is-2">
+        <h6 class="is-inline" style="white-space: nowrap">{{ .Date.Format "Jan 2" }}</h2>
+      </div>
+      <div class="column">
+        <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+        <div class="content is-hidden-mobile">
+          {{ .Summary | plainify | safeHTML | truncate 400 }}
+          {{ if .Truncated }}
+          <br>
+          <a class="button is-marginless is-paddingless" href="{{ .Permalink }}">
+          <span class="icon-link is-small" style="line-height: 100%">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            </span>
+            <p style="padding:0 5px"></p>more</p>
+          </a>
+          {{ end }}
+        </div>
+    </article>
+    {{ end }}
+    {{ end }}
+  </main>
+{{ partial "pager" . }}
+{{ partial "footer" . }}
+</div>
