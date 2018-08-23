@@ -19,7 +19,7 @@ googleAnalytics = ""
   enabled = "true"
 
 [[params.social]]
-  url = "https://gohugo.io/about/"
+  url = "about.html"
   fa_icon = "fas fa-info"
 
 [[params.social]]

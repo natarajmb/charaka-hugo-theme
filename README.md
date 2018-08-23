@@ -11,7 +11,7 @@ Clone this repository to your hugo theme directory.
 ```
 mkdir themes
 cd themes
-git clone https://github.com/natarajmb/charaka-hugo-theme.git charaka
+git clone https://github.com/natarajmb/charaka-hugo-theme.git
 ```
 
 ## Configuration
@@ -29,7 +29,7 @@ __[config.toml](https://github.com/natarajmb/charaka-hugo-theme/blob/master/exam
 baseurl = "https://example.com"
 languageCode = "en"
 title = "Charaka"
-theme = "charaka"
+theme = "charaka-hugo-theme"
 copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
 disqusShortname = ""
 googleAnalytics = ""
@@ -40,7 +40,7 @@ googleAnalytics = ""
   style = "zenburn"
 
 [[params.social]]
-  url = "{{http://localhost:1313}}"
+  url = "about.html"
   fa _icon = "fas fa-info" 
 
 [[params.social]]
