@@ -1,7 +1,7 @@
 baseurl = "https://example.com"
 languageCode = "en"
 title = "Charaka"
-theme = "charaka"
+theme = "charaka-hugo-theme"
 copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
 disqusShortname = ""
 googleAnalytics = ""
