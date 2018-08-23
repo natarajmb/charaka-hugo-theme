@@ -8,23 +8,23 @@
 
 <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
 
-<link rel="stylesheet" href="{{ $scratch.Get "baseURL" }}css/styles.css">
+<link rel="stylesheet" href="{{ $scratch.Get "baseURL" }}/css/styles.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
 integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 {{ with .Site.Params.highlight.style }}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<script src="{{ $scratch.Get "baseURL" }}js/highlight.js"></script>
+<script src="{{ $scratch.Get "baseURL" }}/js/highlight.js"></script>
 {{ end }}
 
 {{ if eq "true" .Site.Params.share.enabled }}
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
-<script type="text/javascript" src="{{ $scratch.Get "baseURL" }}js/jssocials.js"></script>
+<script type="text/javascript" src="{{ $scratch.Get "baseURL" }}/js/jssocials.js"></script>
 {{ end }}
 
 {{ .Scratch.Delete "baseURL" }}

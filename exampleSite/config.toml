@@ -19,11 +19,11 @@ googleAnalytics = ""
   enabled = "true"
 
 [[params.social]]
-  url = "http://localhost:1313"
+  url = "https://gohugo.io/about/"
   fa_icon = "fas fa-info"
 
 [[params.social]]
-  url = "https://github.com/natarajmb"
+  url = "https://github.com/natarajmb/"
   fa_icon = "fab fa-github"
 
 [[params.social]]
@@ -31,5 +31,5 @@ googleAnalytics = ""
   fa_icon = "fab fa-linkedin-in"
 
 [[params.social]]
-  url = "https://twitter.com/natarajmb"
+  url = "https://twitter.com/natarajmb/"
   fa_icon = "fab fa-twitter"
