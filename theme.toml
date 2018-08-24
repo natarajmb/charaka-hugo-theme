@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/natarajmb/charaka-hugo-theme/blob/master/LICENSE.md"
 description = "Minimalistic and Responsive blog theme for hugo"
 homepage = "https://github.com/natarajmb/charaka-hugo-theme"
-tags = ["blog", "highlight.js", "js-socials", "font awesome", "bluma"]
-features = ["html5", "css3"]
+tags = ["personal", "blog", "simple", "clean", "minimalist", "highlight.js", "jssocials", "font-awesome", "bluma"]
+features = ["html5", "css3", "highlight.js", "jssocials", "responsive"]
 min_version = 0.46
 
 [params]
