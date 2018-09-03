@@ -19,7 +19,7 @@ googleAnalytics = ""
   enabled = "true"
 
 [[params.social]]
-  url = "about.html"
+  url = "about"
   fa_icon = "fas fa-info"
 
 [[params.social]]

@@ -6,7 +6,7 @@
       <div class="navbar-menu has-text-centered is-active">
           <div class="navbar-end is-centered">
               {{ range .Site.Params.social }}
-                <a href="{{ .url }}">
+                <a href="{{ .url | absURL }}">
                   <span class="icon">
                     <i class="{{ .fa_icon }}"></i>
                   </span>
