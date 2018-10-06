@@ -13,7 +13,7 @@ $primary: $grey-darker;
 $link: $blue;
 $link-hover: #202020;
 $pre-background: $grey-lighter;
-$family-sans-serif: Domine;
+$family-sans-serif: "Domine", Georgia, serif;
 $body-background-color: $grey-lighter;
 $navbar-background-color: $grey-lighter;
 $navbar-item-hover-background-color: $cyan;
@@ -54,19 +54,23 @@ body{
 
 .container {
     justify-content: center;
+    
     h1 {
         font-size: 1.8em;
-        padding: 10px 0;
         color: $link;
     }
+
     h6 {
         font-size: 1em;
         padding-right: 2em;
+        color: $dark;
     }
+
     h2 {
         font-size: 1.8em;
-        color: $link;
+        color: $dark;
     }
+
     .navbar {
         padding: 3rem 0rem;
         .navbar-brand {
@@ -81,23 +85,31 @@ body{
     }
 }
 
+.content {    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+    }
 
-.content {
     blockquote {
         background-color: #f1ebe2;
         border: 1px $cyan solid;
         border-radius: 5px;
     }
+
+    code {
+        border-radius: 5px;
+    }
+
     pre {
         padding: 1.25em 0;
         code {
             border-radius: 5px;
         }
     }
-    p code.hljs { 
-        display: inline; 
+
+    :not(pre) > code { 
+        display: inline !important; 
         padding: .2em;
-        border-radius: 5px;
     }
 
     .button {
