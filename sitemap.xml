@@ -3,32 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/post/creating-a-new-theme.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/post/migrate-from-jekyll.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/about.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/post/goisforlovers.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/posts/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/post/hugoisforlovers.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/posts/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/categories.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -39,61 +39,61 @@
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/development.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/categories/development.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/go.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/golang.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/categories/golang.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/hugo.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/post.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/posts/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/templates.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/themes.html</loc>
+    <loc>https://natarajmb.github.io/charaka-hugo-theme/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Charaka</title>
-    <link>https://natarajmb.github.io/charaka-hugo-theme/categories.html</link>
+    <link>https://natarajmb.github.io/charaka-hugo-theme/categories/</link>
     <description>Recent content in Categories on Charaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -13,19 +13,19 @@
     
     <item>
       <title>Development</title>
-      <link>https://natarajmb.github.io/charaka-hugo-theme/categories/development.html</link>
+      <link>https://natarajmb.github.io/charaka-hugo-theme/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://natarajmb.github.io/charaka-hugo-theme/categories/development.html</guid>
+      <guid>https://natarajmb.github.io/charaka-hugo-theme/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://natarajmb.github.io/charaka-hugo-theme/categories/golang.html</link>
+      <link>https://natarajmb.github.io/charaka-hugo-theme/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://natarajmb.github.io/charaka-hugo-theme/categories/golang.html</guid>
+      <guid>https://natarajmb.github.io/charaka-hugo-theme/categories/golang/</guid>
       <description></description>
     </item>
     

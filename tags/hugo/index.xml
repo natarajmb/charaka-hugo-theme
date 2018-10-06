@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Charaka</title>
-    <link>https://natarajmb.github.io/charaka-hugo-theme/tags/hugo.html</link>
+    <link>https://natarajmb.github.io/charaka-hugo-theme/tags/hugo/</link>
     <description>Recent content in Hugo on Charaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -14,10 +14,10 @@
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://natarajmb.github.io/charaka-hugo-theme/post/hugoisforlovers.html</link>
+      <link>https://natarajmb.github.io/charaka-hugo-theme/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://natarajmb.github.io/charaka-hugo-theme/post/hugoisforlovers.html</guid>
+      <guid>https://natarajmb.github.io/charaka-hugo-theme/posts/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
