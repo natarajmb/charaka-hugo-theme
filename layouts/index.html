@@ -2,6 +2,7 @@
   {{ partial "header" . }}
   {{ partial "nav" . }}
   <main class="container">
+      {{ if .Pages }}
       {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups}}
       <h1 class="title is-3">{{ .Key }}</h1>
       {{ range where .Pages "Section" "posts" }}
@@ -24,6 +25,7 @@
             {{ end }}
           </div>
       </article>
+      {{ end }}
       {{ end }}
       {{ end }}
     </main>
