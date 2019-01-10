@@ -41,7 +41,7 @@ googleAnalytics = ""
 
 [[params.social]]
   url = "about.html"
-  fa _icon = "fas fa-info" 
+  fa_icon = "fas fa-info" 
 
 [[params.social]]
   url = "https://github.com/natarajmb"
