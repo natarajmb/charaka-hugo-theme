@@ -70,7 +70,7 @@ You can go to localhost:1313 and this theme should be visible.
 - Apple iBooks colour scheme
 
 ## How to tweak
-- Once you have activited the theme as above and running hugo in server mode
+- Once you have activated the theme as above and running hugo in server mode
 - Install [npm](https://www.npmjs.com/get-npm)
 - Get inside checked-out theme directory and run `npm install`
 - Make required changes to style.scss and run `npm run css-build && npm run css-watch` to live update your changes
