@@ -1,138 +1,168 @@
 @charset "utf-8";
 
-// overrider bulma defaults
-$grey-darker: #584029;
-$dark: #584029;
-$grey-lighter: #f8f1e3;
-$light:#f8f1e3; 
-$blue: #760411;
-$cyan: #b8ab99;
-$device: 320px;
-
-$primary: $grey-darker;
-$link: $blue;
-$link-hover: #202020;
-$pre-background: $grey-lighter;
-$family-sans-serif: "Domine", Georgia, serif;
-$body-background-color: $grey-lighter;
-$navbar-background-color: $grey-lighter;
-$navbar-item-hover-background-color: $cyan;
-$button-background-color: $grey-lighter;
-$button-border-color: $cyan;
-$button-hover-border-color: $grey-darker;
-$button-disabled-border-color: $grey-darker;
-$button-focus-box-shadow-color: transparent;
-
+$grey:#4a4a4a;
+$brown: #584029;
+$magenta: #760411;
+$cream: #f8f1e3;
 $gap: 64px;
-$fullhd-enabled: false;
-$desktop: 860px + (2 * $gap);
-$widescreen-enabled: false;
-$mobile: 479px;
 
-@import "../node_modules/bulma/bulma.sass";
+// Override Bulma variables using the `with` map syntax
+@use "bulma/sass" with (
 
+  // need this for headings in page to be brown
+  $grey-darker: $brown,
+  $grey-dark: $brown,
+  $grey: $brown,
+  
+  // need this for button background to be cream
+  $grey-light: $cream,
+  $grey-lighter: $cream,
+  $grey-lightest: $cream,
+
+  // links colour
+  $blue: $magenta,
+
+  // code block and image block border
+  $cyan: $brown,
+
+  // font family  
+  $family-sans-serif: '"Domine", Georgia, serif',
+  
+  // override the entire page background
+  $body-background-color: $cream,
+  
+  // override the main text color
+  $body-color: $grey,
+
+  // overrider the navbar background
+  $navbar-background-color: $cream,
+  
+  $button-disabled-border-color: $brown,
+  $fullhd-enabled: false,
+  $desktop: 860px,
+  $widescreen-enabled: false
+);
+
+// Import the components you need
+@forward "bulma/sass/base";
+@forward "bulma/sass/components/navbar";
+@forward "bulma/sass/elements/button";
+@forward "bulma/sass/elements/icon";
+@forward "bulma/sass/elements/content";
+@forward "bulma/sass/layout/footer";
+@forward "bulma/sass/themes";
+
+// Your custom CSS (unchanged, but consider using CSS variables for colors)
 html {
-    box-sizing: border-box;
-    clear: both;
+  box-sizing: border-box;
+  clear: both;
 }
 
-body{
-    line-height: 1.5;
-    padding: 2em 2em;
+body {
+  line-height: 1.5;
+  padding: 2em 2em;
 }
 
 .icon {
-    font-size: 1.2em;
-    margin: .5em .5em;
+  font-size: 1.2em;
+  margin: .5em .5em; 
+  &:hover {
+    color: $brown;
+  }
 }
 
 .button {
-    &:active:not([disabled]) {
-        top:1px;
-    }
+  &:active:not([disabled]) {
+    top: 1px;
+  }
+  box-shadow: none !important;
 }
 
 .container {
-    justify-content: center;
-    
-    h1 {
-        font-size: 1.8em;
-        color: $link;
-    }
+  justify-content: center;
 
-    h6 {
-        font-size: 1em;
-        padding-right: 2em;
-        color: $dark;
-    }
+  h1 {
+    font-size: 1.8em;
+    color: $magenta;
+  }
 
-    h2 {
-        font-size: 1.8em;
-        color: $dark;
-    }
+  h6 {
+    font-size: 1em;
+    padding-right: 2em;
+    color: $brown;
+  }
 
-    .navbar {
-        padding: 3rem 0rem;
-        .navbar-brand {
-            margin-left: 0;
-            align-items: center;
-            justify-content: center;
-        }
-        .navbar-menu {
-            box-shadow: 0 0 0;
-            padding: 1em 0;
-        }
+  h2 {
+    font-size: 1.8em;
+    color: $brown;
+    a {
+      &:hover {
+          color: $brown;
+      }
     }
+  }
+
+  .navbar {
+    padding: 3rem 0rem;
+    .navbar-brand {
+      margin-left: 0;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar-menu {
+      box-shadow: 0 0 0;
+      padding: 1em 0;
+    }
+  }
 }
 
-.content {    
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: normal;
-    }
+.content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
 
-    blockquote {
-        background-color: #f1ebe2;
-        border: 1px $cyan solid;
-        border-radius: 5px;
-    }
+  blockquote {
+    border: 1px $brown solid;
+    border-radius: 5px;
+  }
 
+  code {
+    border-radius: 5px;
+  }
+
+  pre {
+    padding: 0px;
     code {
-        border-radius: 5px;
+      border-radius: 5px;
     }
+  }
 
-    pre {
-        padding: 1.25em 0;
-        code {
-            border-radius: 5px;
-        }
-    }
+  :not(pre) > code {
+    display: inline !important;
+    padding: .2em;
+  }
 
-    :not(pre) > code { 
-        display: inline !important; 
-        padding: .2em;
+  .button {
+    color: $magenta;
+    background-color: $cream;
+    border: 0px;
+    padding: 5 0px;
+    &:hover {
+      color: $brown;
     }
-
-    .button {
-        color: $link;
-        border: 0px;
-        &:hover {
-            color: $link-hover;    
-        }
-    }
+  }
 }
 
 #share {
-    padding: 1.5em 0;
+  padding: 1.5em 0;
 }
 
-// hugo content display fix
 .hugo-figure {
-    img {
-        display: block;
-        margin: 0.7rem auto;
-        border-radius: 5px;
-        object-fit: cover;
-        border: 1px $cyan solid;
-    }
+  img {
+    display: block;
+    margin: 0.7rem auto;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 1px $brown solid;
+  }
 }
-

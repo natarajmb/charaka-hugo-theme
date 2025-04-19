@@ -32,9 +32,11 @@ title = "Charaka"
 theme = "charaka-hugo-theme"
 copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
 disqusShortname = ""
-googleAnalytics = ""
+relativeURLs = true
+preserveTaxonomyNames = true
 
-[params]
+[services.googleAnalytics]
+googleAnalytics = ""
 
 [params.highlight]
   style = "zenburn"
@@ -57,6 +59,8 @@ googleAnalytics = ""
 ```
 
 ## Build
+
+Requires Hugo v0.145.0 or higher
 
 ```
 hugo server
