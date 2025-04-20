@@ -42,7 +42,7 @@ $code-text-color: #c9c9c9;
 
     $button-disabled-border-color: $brown,
     $fullhd-enabled: false,
-    $desktop: 860px,
+    $desktop: 860px + ($gap * 2),
     $widescreen-enabled: false);
 
 // Import the components you need

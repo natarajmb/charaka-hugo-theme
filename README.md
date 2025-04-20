@@ -30,16 +30,24 @@ baseurl = "https://example.com"
 languageCode = "en"
 title = "Charaka"
 theme = "charaka-hugo-theme"
-copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
+copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2025"
 disqusShortname = ""
 relativeURLs = true
 preserveTaxonomyNames = true
 
 [services.googleAnalytics]
-googleAnalytics = ""
+  ID = ""
 
-[params.highlight]
-  style = "zenburn"
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = false
+  tabWidth = 4
+  noClasses = true
+  style = "vulcan" 
 
 [[params.social]]
   url = "about.html"
