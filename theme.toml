@@ -9,6 +9,9 @@ min_version = "0.145.0"
 
 [params]
 
+[params.assets]
+disableHLJS = true
+
 [author]
   name = "Nataraj Basappa"
   homepage = "https://www.natarajmb.com"

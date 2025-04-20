@@ -1,47 +1,49 @@
 @charset "utf-8";
 
-$grey:#4a4a4a;
+// main theme colors
+$grey: #4a4a4a;
 $brown: #584029;
 $magenta: #760411;
 $cream: #f8f1e3;
 $gap: 64px;
 
+// change this based on the chroma highligter theme
+$code-background: #282c34;
+$code-text-color: #c9c9c9;
+
 // Override Bulma variables using the `with` map syntax
-@use "bulma/sass" with (
+@use "bulma/sass" with ( // need this for headings in page to be brown
+    $grey-darker: $brown,
+    $grey-dark: $brown,
+    $grey: $brown,
 
-  // need this for headings in page to be brown
-  $grey-darker: $brown,
-  $grey-dark: $brown,
-  $grey: $brown,
-  
-  // need this for button background to be cream
-  $grey-light: $cream,
-  $grey-lighter: $cream,
-  $grey-lightest: $cream,
+    // need this for button background to be cream
+    $grey-light: $cream,
+    $grey-lighter: $cream,
+    $grey-lightest: $cream,
 
-  // links colour
-  $blue: $magenta,
+    // links colour
+    $blue: $magenta,
 
-  // code block and image block border
-  $cyan: $brown,
+    // code block and image block border
+    $cyan: $brown,
 
-  // font family  
-  $family-sans-serif: '"Domine", Georgia, serif',
-  
-  // override the entire page background
-  $body-background-color: $cream,
-  
-  // override the main text color
-  $body-color: $grey,
+    // font family  
+    $family-sans-serif: '"Domine", Georgia, serif',
 
-  // overrider the navbar background
-  $navbar-background-color: $cream,
-  
-  $button-disabled-border-color: $brown,
-  $fullhd-enabled: false,
-  $desktop: 860px,
-  $widescreen-enabled: false
-);
+    // override the entire page background
+    $body-background-color: $cream,
+
+    // override the main text color
+    $body-color: $grey,
+
+    // overrider the navbar background
+    $navbar-background-color: $cream,
+
+    $button-disabled-border-color: $brown,
+    $fullhd-enabled: false,
+    $desktop: 860px,
+    $widescreen-enabled: false);
 
 // Import the components you need
 @forward "bulma/sass/base";
@@ -54,115 +56,149 @@ $gap: 64px;
 
 // Your custom CSS (unchanged, but consider using CSS variables for colors)
 html {
-  box-sizing: border-box;
-  clear: both;
+    box-sizing: border-box;
+    clear: both;
 }
 
 body {
-  line-height: 1.5;
-  padding: 2em 2em;
+    line-height: 1.5;
+    padding: 2em 2em;
 }
 
 .icon {
-  font-size: 1.2em;
-  margin: .5em .5em; 
-  &:hover {
-    color: $brown;
-  }
+    font-size: 1.2em;
+    margin: .5em .5em;
+
+    &:hover {
+        color: $brown;
+    }
 }
 
 .button {
-  &:active:not([disabled]) {
-    top: 1px;
-  }
-  box-shadow: none !important;
+    border: 1px $brown solid;
+    box-shadow: none !important;
+    background-color: $cream;
+    color: $magenta;
+
+    &:is([disabled]) {
+        color: $brown;
+    }
+
+    &:hover {
+        color: $brown;
+    }
 }
 
 .container {
-  justify-content: center;
+    justify-content: center;
 
-  h1 {
-    font-size: 1.8em;
-    color: $magenta;
-  }
-
-  h6 {
-    font-size: 1em;
-    padding-right: 2em;
-    color: $brown;
-  }
-
-  h2 {
-    font-size: 1.8em;
-    color: $brown;
-    a {
-      &:hover {
-          color: $brown;
-      }
+    h1 {
+        font-size: 1.8em;
+        color: $magenta;
     }
-  }
 
-  .navbar {
-    padding: 3rem 0rem;
-    .navbar-brand {
-      margin-left: 0;
-      align-items: center;
-      justify-content: center;
+    h6 {
+        font-size: 1em;
+        padding-right: 2em;
+        color: $brown;
     }
-    .navbar-menu {
-      box-shadow: 0 0 0;
-      padding: 1em 0;
+
+    h2 {
+        font-size: 1.8em;
+        color: $brown;
+
+        a {
+            &:hover {
+                color: $brown;
+            }
+        }
     }
-  }
+
+    .navbar {
+        padding: 3rem 0rem;
+
+        .navbar-brand {
+            margin-left: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-menu {
+            box-shadow: 0 0 0;
+            padding: 1em 0;
+        }
+    }
 }
 
 .content {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-  }
 
-  blockquote {
-    border: 1px $brown solid;
-    border-radius: 5px;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal;
+    }
 
-  code {
-    border-radius: 5px;
-  }
+    blockquote {
+        border: 1px $brown solid;
+        border-radius: 5px;
+    }
 
-  pre {
-    padding: 0px;
+    .highlight {
+        pre {
+            padding: 0 10px;
+        }
+    }
+
+    // inline code highlighting, change this based on choosen theme
     code {
-      border-radius: 5px;
+        border-radius: 5px;
+        background: $code-background;
+        color: $code-text-color;
     }
-  }
 
-  :not(pre) > code {
-    display: inline !important;
-    padding: .2em;
-  }
+    pre {
+        padding: 0px;
+        border-radius: 10px;
 
-  .button {
-    color: $magenta;
-    background-color: $cream;
-    border: 0px;
-    padding: 5 0px;
-    &:hover {
-      color: $brown;
+        // code highlighting for anynomous code, change this based on choosen theme
+        code {
+            border-radius: 5px;
+            background: $code-background;
+            padding: 1em;
+            display: block;
+        }
     }
-  }
+
+    :not(pre)>code {
+        display: inline !important;
+        padding: .2em;
+    }
+
+    .button {
+        color: $magenta;
+        background-color: $cream;
+        border: 0px;
+        padding: 5 0px;
+
+        &:hover {
+            color: $brown;
+        }
+    }
 }
 
 #share {
-  padding: 1.5em 0;
+    padding: 1.5em 0;
 }
 
 .hugo-figure {
-  img {
-    display: block;
-    margin: 0.7rem auto;
-    border-radius: 5px;
-    object-fit: cover;
-    border: 1px $brown solid;
-  }
+    img {
+        display: block;
+        margin: 0.7rem auto;
+        border-radius: 5px;
+        object-fit: cover;
+        border: 1px $brown solid;
+    }
 }
