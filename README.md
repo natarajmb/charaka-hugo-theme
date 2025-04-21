@@ -2,7 +2,7 @@
 
 Minimalistic and Responsive blog theme for hugo. Uses css framework [Bulma](https://bulma.io/).
  
-![](https://github.com/natarajmb/charaka-hugo-theme/blob/master/images/screenshot.png)
+![](https://github.com/natarajmb/charaka-hugo-theme/blob/main/images/screenshot.png)
 
 ## Getting Started
 
@@ -16,14 +16,14 @@ git clone https://github.com/natarajmb/charaka-hugo-theme.git
 
 ## Configuration
 
-Take a look in the [exampleSite](https://github.com/natarajmb/charaka-hugo-theme/tree/master/exampleSite) folder.
+Take a look in the [exampleSite](https://github.com/natarajmb/charaka-hugo-theme/tree/main/exampleSite) folder.
 
 This directory contains an example config file and the content for the demo.
 It serves as an example setup for your documentation.
 
 Copy the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
 
-__[config.toml](https://github.com/natarajmb/charaka-hugo-theme/blob/master/exampleSite/config.toml)__:
+__[config.toml](https://github.com/natarajmb/charaka-hugo-theme/blob/main/exampleSite/config.toml)__:
 
 ```toml
 baseurl = "https://example.com"
