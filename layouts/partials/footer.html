@@ -1,4 +1,4 @@
-{{ if .IsPage }}
+{{ if or .IsPage (eq .RelPermalink "/about/") }}
 <section class="section py-0">
   <div class="container has-text-centered">
     <p>{{ .Site.Copyright | safeHTML }}</p>
